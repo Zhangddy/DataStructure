@@ -1,0 +1,4 @@
+﻿  SeqList.c
+d:\code\datastructure\顺序表\顺序表\seqlist.c(95): error C2065: “i”: 未声明的标识符
+  test.c
+  正在生成代码...
