@@ -1,5 +1,4 @@
 #pragma once
-
 // 顺序表结构:
 // 数组
 // 静态顺序表: 
@@ -31,6 +30,18 @@ void SeqListPushFront(PSeq ps, DataType data);
 void SeqListPopFront(PSeq ps);
 void SeqListInsert(PSeq ps, int pos, DataType data);
 void SeqListErase(PSeq ps, int pos);
+int SeqListFind(PSeq ps, DataType data);
+int SeqListSize(PSeq ps);
+int SeqListCapacity(PSeq ps);
+void SeqListClear(PSeq ps);
+void SeqListRemove(PSeq ps, DataType data);
 int SeqListEmpty(PSeq ps);
 void SeqListDestroy(PSeq ps);
+void CheckCapacity(PSeq ps);
+void SeqListModify(PSeq ps, int pos, DataType data);
 void SeqListPrint(PSeq ps);
+
+/////////////////////////////////////
+//常见的一些附加功能
+void SeqListRemoveAll(PSeq ps, DataType data);
+void SeqListBubbleSort(PSeq ps);
