@@ -12,8 +12,10 @@ typedef struct SList
 {
 	PNode _pHead;
 }SList;
+// 一个单链表的结构体, 传来传去比较爽
 // 用于保存链表, 但不是头结点!也不是第一个节点!
 // _pHead指向第一个节点
+// 封装了二级指针, 否则要传送二级指针
 
 void SListInit(SList* s);
 void SListDestory(SList* s);
