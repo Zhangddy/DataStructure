@@ -249,6 +249,17 @@ void PrintSList(SList* s)
 	printf("NULL\n");
 }
 
+void ReversePrint(PNode pHead)
+{
+	// Á´±íÄæÐò´òÓ¡
+	if (pHead)
+	{
+		ReversePrint(pHead->_pNext);
+		printf("%d \n", pHead->_data);
+	}
+}
+
+
 void TestSlist()
 {
 	SList s;
@@ -259,11 +270,9 @@ void TestSlist()
 	SListPushBack(&s, 4);
 	SListPushBack(&s, 3);
 	SListPushBack(&s, 3);
-
+	ReversePrint(s._pHead);
 	PrintSList(&s);
 
-	SListRemoveAll(&s, 3);
-	PrintSList(&s);
 	SListDestory(&s);
 
 }
