@@ -1,0 +1,4 @@
+﻿  Heap.c
+d:\code\datastructure\堆\堆\heap.c(220): warning C4101: “i”: 未引用的局部变量
+d:\code\datastructure\堆\堆\heap.c(211): warning C4101: “h”: 未引用的局部变量
+  堆.vcxproj -> D:\Code\DataStructure\堆\Debug\堆.exe
