@@ -116,6 +116,18 @@ BTNode* BinTreeFind(BTNode* pRoot, BTDataType x)
 	}
 	return BinTreeFind(pRoot->_pRight, x);
 }
+int BinTreeGetLeafCount(BTNode* pRoot)
+{
+	if (NULL == pRoot)
+	{
+		return 0;
+	}
+	if (NULL == pRoot->_pLeft && NULL == pRoot->_pRight)
+	{
+		return 1;
+	}
+	return BinTreeGetLeafCount(pRoot->_pLeft) + BinTreeGetLeafCount(pRoot->_pRight);
+}
 
 int BinTreeGetHeight(BTNode* pRoot)
 {
@@ -141,8 +153,9 @@ void test()
 
 	PostOrder(tree);
 	putchar('\n');
-	printf("%d \n", BinTreeGetKLevelNodeCount(tree, 2));
+	printf("%d \n", BinTreeGetKLevelNodeCount(tree, 3));
 	printf("%d \n", BinTreeGetHeight(tree));
-	
+	printf("%d \n", BinTreeGetLeafCount(tree));
+
 	BinTreeDestroy(&tree);
 }
