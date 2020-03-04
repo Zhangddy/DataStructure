@@ -176,8 +176,9 @@ public:
 
 		parent->_pRight = pSubRL;
 		if (pSubRL != nullptr)
-			pSubR->_pParent = parent;
-
+		{
+			pSubRL->_pParent = parent;
+		}
 		if (parent == _pRoot)
 		{
 			_pRoot = pSubR;
