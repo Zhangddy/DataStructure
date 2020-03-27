@@ -115,8 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="MyMap.h" />
-    <ClInclude Include="MySet.h" />
     <ClInclude Include="RBTree.h" />
   </ItemGroup>
   <ItemGroup>
